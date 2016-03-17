@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "../sass/facilities-wrapper.css",
+	"sources": [
+		"../sass/facilities-wrapper.scss",
+		"../sass/_resets.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "ACAA,CAAC,AAAC,CACD,MAAM,CAAE,CAAE,CACV,OAAO,CAAE,CAAE,CAFT",
+	"names": []
+}
