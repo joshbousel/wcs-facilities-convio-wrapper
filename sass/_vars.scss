@@ -1,1 +1,17 @@
 $font-path: '../fonts/';
+$image-path: '../images/';
+
+/* Colors */
+$blue-green: #008484;
+$gold: #85754e;
+
+/* Fonts */
+$fallbacks: helvetica, arial, sans-serif;
+$font-brandon: 'Brandon Grotesque', $fallbacks;
+$font-lato: 'Lato', $fallbacks;
+$font-foundation: 'Foundation Sans', $fallbacks;
+
+/* Breakpoints */
+$break-desktop: 1100px;
+$break-tablet: 768px;
+$break-mobile: 480px;

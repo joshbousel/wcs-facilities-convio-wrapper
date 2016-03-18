@@ -1,0 +1,33 @@
+.wcs-footer {
+	background: #212426;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.wcs-footer__link {
+	color: $blue-green;
+	display: inline-block;
+	font-family: $font-lato;
+	font-size: .825rem;
+	line-height: .825rem;
+	margin: 0 15px 0 0;
+	position: relative;
+	text-decoration: none;
+	
+	&:last-of-type {
+		margin: 0;
+	}
+	
+	&:after {
+		border-bottom: 1px solid $blue-green;
+	    content: "";
+	    display: block;
+	    margin: 10px auto 0;
+	    transition: width .15s ease-out;
+	    width: 0;
+	}
+	
+	&:hover:after {
+		width: 35px;
+	}
+}
