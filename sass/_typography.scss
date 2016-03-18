@@ -1,0 +1,40 @@
+.wcs-body-text {
+	color: $black;
+	font-family: $font-lato;
+	font-size: 1rem;
+	line-height: 1.75rem;
+}
+
+.wcs-link {
+	color: $blue-green;
+	transition: $default-transition;
+	
+	&:hover {
+		color: $blue-green-hover;
+	}
+}
+
+.wcs-header-text {
+	@include header();
+	
+	@media all and (max-width:$break-tablet) {
+		font-size: 2rem;
+		line-height: 2.25rem;
+	}
+	
+	@media all and (max-width:$break-mobile) {
+		font-size: 1.65rem;
+		line-height: 1.75rem;
+	}
+}
+
+.wcs-subheader-text {
+	@include header(1.25rem, $font-brandon, $orange);
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	
+	@media all and (max-width:$break-mobile) {
+		font-size: 1rem;
+		line-height: 1.15rem;
+	}
+}

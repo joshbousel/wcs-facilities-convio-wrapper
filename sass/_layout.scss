@@ -6,17 +6,29 @@
 	padding: 32px;
 	max-width: 715px;
 	
-	@media all and (max-width:$break-desktop) {
+	@media all and (max-width:$break-tablet) {
 		max-width: calc(100% - 64px);
 		width: calc(100% - 64px);
 	}
 }
 
+.wcs-inset-image--right {
+	float: right; 
+	margin: 0 0 15px 15px;
+	
+	@media all and (max-width:$break-mobile) {
+		height: auto;
+		margin: 0 0 15px 0;
+		width: 100%; 
+	}
+}
+
+
 .wcs-main {
 	background: url('#{$image-path}bg-paper.png');
 	padding: 24px;
 	
-	@media all and (max-width:$break-desktop) {
+	@media all and (max-width:$break-tablet) {
 		padding: 0;
 	}
 }

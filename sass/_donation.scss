@@ -3,4 +3,188 @@ div.donation-form-container.responsive {
     border: none;
     padding: 0;
     width: 100%;
+    
+    /* Base Donation Form Styles */
+    a {
+	    @extend .wcs-link;
+    }
+    
+    div, form, span, p {
+		@extend .wcs-body-text;
+	}
+	
+	div.form-row {
+	    margin-top: 15px;
+	}
+    
+    h2 {
+		@extend .wcs-header-text;
+		margin: 0 0 30px;
+		text-align: center;
+	}
+	
+	h3 {
+		@extend .wcs-subheader-text;
+		margin: 25px 0 0 0;
+	}
+	
+	input[type="text"], 
+	input[type="number"], 
+	input[type="password"], 
+	textarea {
+		@extend .wcs-input;
+		
+		@media all and (max-width:$break-tablet) {
+			width: calc(100% - 30px) !important;
+		}
+	}
+	
+	p {
+		margin: 0 0 25px;
+	}
+	
+	select {
+		@extend .wcs-select;
+		
+		@media all and (max-width:$break-tablet) {
+			width: 100%;
+		}
+	}
+
+	
+	/* Element Specific Styles */
+	
+	.auto-opt-in-warning-message, 
+	#payment_typecc_exp_date_row .form-content label + label, 
+	#payment_typecc_type_row legend, 
+	.step-button.cancel-step, 
+	#donor_email_opt_in_Row,
+	.form-row .form-content .donation-level-user-entered label {
+	    display: none !important;
+	}
+	
+	.badges {
+		margin: 25px 0;
+	    text-align: center;
+	}
+	
+	.badge, 
+	.badge img {
+	    display: inline-block;
+	    margin: 0;
+	    padding: 0;
+	    vertical-align: top;
+	}
+	
+	.badge img {
+	    margin: 0 15px 0 0;
+	}
+	
+	button.step-button {
+		@extend .wcs-button;
+	}
+	
+	.button-container {
+		border-top: 1px solid #e8e7e5;
+	}
+
+	.date-input-container,
+	.date-input-container fieldset {
+		@media all and (max-width:$break-tablet) {
+			width: 100%;
+		}
+		
+		select {
+			@media all and (max-width:$break-tablet) {
+				margin: 0 10px 0 0;
+				width: auto;
+			}
+		}	
+	}
+	
+	.donation-level-amount-container, 
+	.donation-level-label-container {
+	    line-height: 1rem !important;
+	    margin: 0 0 0 5px;
+	}
+	
+	.donation-level-container,
+	.donation-level-input-container,
+	.form-content,
+	.generic-repeat-label-checkbox-container {
+		margin: 0;
+		padding: 0;
+		position: relative
+	}
+	
+	.donation-level-label-input-container {
+	    vertical-align: bottom;
+	}
+	
+	.form-content {
+		width: 100%;
+		
+		.HelpLink {
+		    position: absolute;
+		    width: 100%;
+		    bottom: -28px;
+		    
+		    @media all and (max-width:$break-tablet) {
+				left: 0;
+			}
+		}
+	}
+	
+	.form-row .form-content label {
+	    width: 11.75em;
+	}
+	
+	.form-row .form-content .field-required + label {
+	    width: 11em;
+	}
+
+	.form-row .form-content .donation-level-container label {
+	    width: auto;
+	}
+	
+	.FormSectionHeader {
+		background: transparent;
+		border: none;
+		@extend .wcs-subheader-text;
+	}
+
+	
+	label.FormLabel {
+		min-width: inherit;
+	}
+	
+	#level_standard_row .form-content .field-required, 
+	#level_standard_row .form-content .FormLabelText,
+	#level_standard_row .form-content .donation-level-general-ask, 
+	#level_standard_row .form-content .donation-levels,
+	.form-row .form-content .field-required,
+	.form-row .form-content label,
+	.form-row .form-content input, 
+	.form-row .form-content select,
+	input[type="checkbox"],
+	fieldset,
+	.date-input-container {
+	    display: inline-block!important;
+	    vertical-align: text-top!important;
+	}
+
+	
+	.payment-type-element-container {
+		margin: 0 0 65px;
+	}
+
+	.transaction-summary-entries {
+		margin: 15px 0 0;
+	}
+	
+	.transaction-summary-entry {
+		background: transparent;
+		border-top: 1px solid #e8e7e5;
+	}
+
 }

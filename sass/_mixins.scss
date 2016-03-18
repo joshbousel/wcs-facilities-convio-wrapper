@@ -1,3 +1,7 @@
-@mixin header($font-size ) {
-
+@mixin header($font-size: 2.25rem, $font-family: $font-merriweather, $color: $gold, $font-weight: normal, $line-height: $font-size) {
+	color: $color;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
 }

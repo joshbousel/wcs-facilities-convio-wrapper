@@ -7,5 +7,16 @@
 .wcs-header__logo {
 	height: 28px;
 	margin: 24px auto;
+	transition: $default-transition;
 	width: auto;
+	
+	@media all and (max-width:$break-tablet) {
+		height: 22px;
+		margin: 20px auto;
+	}
+	
+	@media all and (max-width:$break-mobile) {
+		height: 20px;
+		margin: 16px auto;
+	}
 }

@@ -27,6 +27,10 @@
 	    width: 0;
 	}
 	
+	&:hover {
+		color: $blue-green;
+	}
+	
 	&:hover:after {
 		width: 35px;
 	}

@@ -1,0 +1,23 @@
+.wcs-button {
+    background-color: $orange !important;
+    background-image: none;
+    border: none;
+    border-radius: 4px;
+    color: #fff !important;
+    display: inline-block;
+    font-family: $font-lato;
+    font-size: .875rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: .875rem;
+    max-width: none;
+    padding: 12px 32px;
+    position: relative;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    
+    &:hover {
+	    background-color: #e7ae65 !important;
+	    background-image: none;
+    }
+}

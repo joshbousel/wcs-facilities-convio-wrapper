@@ -2,16 +2,23 @@ $font-path: '../fonts/';
 $image-path: '../images/';
 
 /* Colors */
+$black: #272b2d;
 $blue-green: #008484;
+$blue-green-hover: #009d9e;
 $gold: #85754e;
+$orange: #e58a1f;
 
 /* Fonts */
-$fallbacks: helvetica, arial, sans-serif;
-$font-brandon: 'Brandon Grotesque', $fallbacks;
-$font-lato: 'Lato', $fallbacks;
-$font-foundation: 'Foundation Sans', $fallbacks;
+$fallbacks-sans: helvetica, arial, sans-serif;
+$fallbacks-serif: georgia, 'times new roman', serif;
+$font-brandon: 'Brandon Grotesque', $fallbacks-sans;
+$font-lato: 'Lato', $fallbacks-sans;
+$font-foundation: 'Foundation Sans', $fallbacks-sans;
+$font-merriweather: 'Merriweather', $fallbacks-serif;
 
 /* Breakpoints */
-$break-desktop: 1100px;
 $break-tablet: 768px;
 $break-mobile: 480px;
+
+/* Transition */
+$default-transition: all 0.1s ease-out;
