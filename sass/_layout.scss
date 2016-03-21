@@ -26,6 +26,7 @@
 
 .wcs-main {
 	background: url('#{$image-path}bg-paper.png');
+	display: block;
 	padding: 24px;
 	
 	@media all and (max-width:$break-tablet) {

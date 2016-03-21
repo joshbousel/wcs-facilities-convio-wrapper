@@ -5,9 +5,10 @@
     border-radius: 2px;
     box-shadow: 0 0 0 2px white, 0 0 0 3px #f7f7f7;
     color: #706c65;
+    font-family: $font-lato;
     font-size: 1rem;
     line-height: 1rem;
-    padding: 6px 14px 8px;
+    padding: 7px 14px;
     transition: border 0.1s ease-out, box-shadow 0.1s ease-out;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -25,5 +26,9 @@
 	background-image: url('#{$image-path}arrow-down.svg');
     background-position: 98% 65%;
     background-repeat: no-repeat;
-    padding: 6px 30px 8px 14px;
+    padding: 7px 30px 7px 14px;
+    
+    &::-ms-expand{
+	  display:none;
+	}
 }

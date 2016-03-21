@@ -1,0 +1,283 @@
+.luminate-eventAppArea {
+	
+	/* Base Event Form Styles */
+	a {
+	    @extend .wcs-link;
+    }
+	
+	.Button {
+		@extend .wcs-button;
+	}
+	
+	 div, form, span, p, strong, label {
+		@extend .wcs-body-text;
+	}
+	
+	h3 {
+		@extend .wcs-header-text;
+	}
+	
+	input[type="text"], 
+	input[type="number"], 
+	input[type="password"], 
+	textarea {
+		@extend .wcs-input;
+		
+		@media all and (max-width:$break-tablet) {
+			width: calc(100% - 30px) !important;
+		}
+	}
+	
+	p {
+		margin: 0 0 5px;
+	}
+	
+	select {
+		@extend .wcs-select;
+		
+		@media all and (max-width:$break-tablet) {
+			width: 100%;
+		}
+	}
+	
+	/* Element Specific Styles */
+	
+	#accepts_email {
+		vertical-align: sub;
+	}
+	
+	.appArea {
+		width: 100%;
+	}
+	
+	.billing-info-container {
+		width: 100%;
+	}
+	
+	.billing-info-field-value {
+	    background-color: #F3F3F3;
+	    border-radius: 2px;
+	    margin: 0 0 15px;
+	    padding: 2px 10px !important;
+	    width: calc(100% - 215px) !important;
+	    
+	    @media all and (max-width:$break-tablet) {
+			width: calc(100% - 25px) !important;
+		}
+	}
+	
+	#billing-info-table {
+		input, select {
+			margin: 0 0 0 10px;
+		}
+		
+		td+td+td {
+			@media all and (max-width:$break-tablet) {
+				display: none;
+			}
+		}
+		
+		td td+td+td {
+			@media all and (max-width:$break-tablet) {
+				display: table-cell;
+			}
+		}
+	}
+	
+	.BorderContainer,
+	.lo-BorderContainer {
+		border: none;
+		padding: 0;
+		
+		td {
+		    padding: 0 0 15px 0;
+		}
+	}
+	
+	#CANCEL_DIRECT_PAY_FORM,
+	#SHOW_PAYMENT_FORM {
+		background-color: #BBB !important;
+		
+		&:hover {
+			background-color: #CECECE !important;	 
+		 }
+	}
+	
+	.cons-reg-label-checkbox {
+		line-height: 1rem;
+	}
+	
+	div.consRegFieldContainer .fieldContainer {
+		margin: 15px 0 0;
+	}
+	
+	div.consRegFieldContainer .fieldContainer .field-row {
+		margin: 0 0 20px;
+		width: 100%;
+	}
+	
+	.fieldContainer .field-row .value {
+		@media all and (max-width:$break-tablet) {
+			width: calc(100% - 9px) !important;
+		}
+	}
+	
+	label[for="tix_total_cost"] {
+	    display: inline-block;
+		text-align: right;
+	    width: calc(100% - 113px);
+	    
+	    @media all and (max-width:$break-tablet) {
+			width: 100%;
+		}
+	}
+	
+	.lo-CalendarDateValue a {
+		color: $black;
+	    cursor: default;
+	    text-decoration: none;
+	    
+	    &:hover {
+		    color: $black;
+	    }
+	}
+	
+	.lc_Cell {
+		border-bottom: 1px solid #e8e7e5;
+		border-left: none;
+		border-right: 1px solid #e8e7e5;
+		padding: 5px 10px;
+		
+		&:first-of-type {
+			border-left: 1px solid #e8e7e5;
+		}
+		
+		a {
+			display: inline-block;
+			line-height: 1.25rem;
+		}
+		
+		input {
+			float: right;
+		}
+		
+		label {
+			white-space: normal;
+		}
+	}
+	
+	.lc_Heading {
+	    background: $gold;
+	    border: none;
+	}
+	
+	.lc_Row1 {
+		background: transparent;
+	}
+	
+	.lc_Table {
+		border: none;
+		margin: 0 0 25px;
+	}
+	
+	.lc_Totals {
+		background: transparent;
+		border-bottom: 1px solid #e8e7e5;
+		border-left: 1px solid #e8e7e5;
+		padding: 10px;
+		text-align: left;
+		vertical-align: bottom;
+		
+		input {
+			float: right;
+		}
+	}
+	
+	.lc_TotalsVal {
+		border-bottom: 1px solid #e8e7e5;
+		border-left: 1px solid #e8e7e5;
+		border-right: 1px solid #e8e7e5;
+		padding: 10px;
+		vertical-align: bottom;
+	}
+	
+	.lo-BorderContainer td table table td {
+		padding: 0;
+	}
+	
+	.lo-EventBorderContainer {
+		border: none;
+		padding: 0;
+	}
+	
+	.lo-Event_lc_Cell_border_top {
+		border: none;
+	}
+	
+	.lo-no_border_bottom {
+		border: none;
+	}
+	
+	.lo-EventSubHeaderBar,
+	.lo-BorderHeaderBar {
+		@extend .wcs-subheader-text;
+	}
+	
+	.lo-TitleBar {
+		@extend .wcs-header-text;
+		margin: 0 0 10px;
+	}
+	
+	.PaddedListHeadingsC,
+	label[for="tix_cost"] {
+	    color: #fff;
+	    font-family: $font-brandon;
+	    font-size: .825rem;
+	    font-weight: normal;
+	    letter-spacing: 1.5px;
+	    line-height: .825rem;
+	    margin: 0;
+	    padding: 5px;
+	    text-transform: uppercase;
+	}
+	
+	#rsvp_reset,
+	#rsvp_cancel,
+	#home,
+	#DON_EMAIL_OPT_IN,
+	input[title="Back"],
+	#s_rememberMe,
+	label[for="s_rememberMe"],
+	.lo-EventLinkContainer {
+		display: none !important;
+	}
+	
+	.Smaller,
+	.Smaller a,
+	.Smaller a strong {
+		font-size: .75rem;
+		line-height: 1rem;
+		
+		a {
+			color: $blue-green !important;
+		}
+	}
+}
+
+.ticket-class-details-dialog {
+	.member-callout {
+		color: $orange;
+		display: inline-block;
+		line-height: 1.25rem;
+	}
+	
+	span, p {
+		@extend .wcs-body-text;
+	}
+	
+	p {
+		font-size: .825rem !important;
+	    line-height: 1rem !important;
+	    margin: 10px 0;	
+	}
+}
