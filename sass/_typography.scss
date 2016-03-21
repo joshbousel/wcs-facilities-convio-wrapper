@@ -1,3 +1,15 @@
+.nyaquarium .wcs-header-text {
+	color: $aq-dark-blue;
+	font-family: $font-foundation;
+}
+
+.nyaquarium .wcs-subheader-text {
+	color: $aq-blue;
+	font-family: $font-foundation;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
 .wcs-body-text {
 	color: $black;
 	font-family: $font-lato;

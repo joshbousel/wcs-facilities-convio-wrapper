@@ -1,3 +1,11 @@
+.nyaquarium .wcs-button {
+	background: $aq-blue !important;
+		
+	&:hover {
+		background: $aq-hover-blue !important;
+	}
+}
+
 .wcs-button {
     background-color: $orange !important;
     background-image: none;

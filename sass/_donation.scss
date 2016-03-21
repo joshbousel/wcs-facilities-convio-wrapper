@@ -121,6 +121,10 @@ div.donation-form-container.responsive {
 	    vertical-align: bottom;
 	}
 	
+	.field-error-text {
+		width: calc(100% - 38px);
+	}
+	
 	.form-content {
 		width: 100%;
 		
@@ -186,5 +190,4 @@ div.donation-form-container.responsive {
 		background: transparent;
 		border-top: 1px solid #e8e7e5;
 	}
-
 }
