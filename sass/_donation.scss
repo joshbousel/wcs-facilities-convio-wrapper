@@ -82,6 +82,10 @@ div.donation-form-container.responsive {
 	
 	button.step-button {
 		@extend .wcs-button;
+		
+		@media all and (max-width:$break-tablet) {
+			float: left;
+		}
 	}
 	
 	.button-container {
@@ -122,7 +126,7 @@ div.donation-form-container.responsive {
 	}
 	
 	.field-error-text {
-		width: calc(100% - 38px);
+		width: calc(100% - 38px) !important;
 	}
 	
 	.form-content {
