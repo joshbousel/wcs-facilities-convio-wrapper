@@ -24,6 +24,7 @@
     position: relative;
     text-transform: uppercase;
     transition: background-color 0.2s ease-in-out;
+    -webkit-appearance: none;
     
     &:hover {
 	    background-color: #e7ae65 !important;

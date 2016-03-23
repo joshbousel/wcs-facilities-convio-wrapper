@@ -237,6 +237,14 @@
 		@extend .wcs-subheader-text;
 	}
 	
+	#lo-ticket_class_list_user .lc_Heading,
+	#lo-ticket_class_list_user .lc_Cell {
+		&:nth-of-type(3),
+		&:nth-of-type(4) {
+			display: none;
+		}
+	}
+	
 	.lo-TitleBar {
 		@extend .wcs-header-text;
 		margin: 0 0 10px;
