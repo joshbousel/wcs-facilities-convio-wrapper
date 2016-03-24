@@ -14,10 +14,10 @@
     color: #fff !important;
     cursor: pointer;
     display: inline-block;
-    font-family: $font-lato;
+    font-family: $font-brandon;
     font-size: .875rem;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     line-height: .875rem;
     max-width: none;
     padding: 12px 32px;
@@ -25,6 +25,7 @@
     text-transform: uppercase;
     transition: background-color 0.2s ease-in-out;
     -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
     
     &:hover {
 	    background-color: #e7ae65 !important;
