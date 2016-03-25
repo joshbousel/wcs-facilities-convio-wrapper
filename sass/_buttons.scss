@@ -22,6 +22,7 @@
     max-width: none;
     padding: 12px 32px;
     position: relative;
+    text-decoration: none;
     text-transform: uppercase;
     transition: background-color 0.2s ease-in-out;
     -webkit-appearance: none;
@@ -30,5 +31,25 @@
     &:hover {
 	    background-color: #e7ae65 !important;
 	    background-image: none;
+    }
+    
+    &__action {
+	    color: #fff !important;
+	    font-family: $font-brandon !important;
+	    font-size: .875rem !important;
+	    -webkit-font-smoothing: antialiased;
+	    vertical-align: sub;
+    }
+    
+    &--has-icon {
+	    padding: 6px 20px 4px;
+    }
+    
+    &__icon {
+	    color: #fff;
+	    height: 18px;
+	    margin: 0 5px 0 0;
+		vertical-align: middle;
+        width: 18px;
     }
 }
