@@ -122,6 +122,10 @@
 		width: 100%;
 	}
 	
+	.ErrorMessage {
+		color: $red;
+	}
+	
 	.fieldContainer .field-row .value {
 		@media all and (max-width:$break-tablet) {
 			width: calc(100% - 9px) !important;
@@ -207,6 +211,7 @@
 		vertical-align: bottom;
 	}
 	
+	
 	.lo-BorderContainer td table table td {
 		padding: 0;
 	}
@@ -237,14 +242,6 @@
 		@extend .wcs-subheader-text;
 	}
 	
-	#lo-ticket_class_list_user .lc_Heading,
-	#lo-ticket_class_list_user .lc_Cell {
-		&:nth-of-type(3),
-		&:nth-of-type(4) {
-			display: none;
-		}
-	}
-	
 	.lo-TitleBar {
 		@extend .wcs-header-text;
 		margin: 0 0 10px;
@@ -270,7 +267,9 @@
 	input[title="Back"],
 	#s_rememberMe,
 	label[for="s_rememberMe"],
-	.lo-EventLinkContainer {
+	.lo-EventLinkContainer,
+	.cons-reg-default_checked,
+	#lo-EventAttendeeContainer #consEmail {
 		display: none !important;
 	}
 	
@@ -301,5 +300,40 @@
 		font-size: .825rem !important;
 	    line-height: 1rem !important;
 	    margin: 10px 0;	
+	}
+}
+
+.wcs-event--has-custom-date {
+	#lo-CalendarDateInfoContainer {
+		display: none;
+	}
+}
+
+.wcs-event--no-event-preferences {
+	#lo-EventPreferenceTitle {
+		display: none;
+	}
+}
+
+.wcs-event--no-tax-deductible {
+	#lo-ticket_class_list_user .lc_Heading,
+	#lo-ticket_class_list_user .lc_Cell {
+		&:nth-of-type(3),
+		&:nth-of-type(4) {
+			display: none;
+		}
+	}
+	
+	#EventHistory .lc_Heading,
+	#EventHistory .lc_Cell {
+		&:nth-of-type(5) {
+			display: none;
+		}
+	}
+	
+	#EventHistory .lo-Event_lc_Cell_border_top {
+		&:nth-of-type(1) {
+			display: none;
+		}
 	}
 }
