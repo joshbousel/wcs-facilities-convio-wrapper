@@ -1,0 +1,71 @@
+.appArea {
+	a {
+	    @extend .wcs-link;
+    }
+    
+    .AutoOptInWarningMessage {
+	    @extend .wcs-body-text--small;
+    }
+	
+	.Button {
+		@extend .wcs-button;
+		margin: 0 0 0 10px;		
+	}
+	
+	.ErrorMessage {
+		@extend .wcs-error;
+	}
+	
+	.Explicit {
+		font-weight: bold;
+	}
+	
+	h4 {
+		@extend .wcs-subheader-text;
+		margin: 0 0 10px;
+		text-align: center;
+	}
+	
+	input[type="text"], 
+	input[type="number"], 
+	input[type="password"], 
+	textarea {
+		@extend .wcs-input;
+		margin: 5px 5px 5px 0;
+	}
+	
+	.ObjTitle {
+		@extend .wcs-header-text;
+		text-align: center;
+	}
+	
+	#reset,
+	#ACTION_CANCEL_RESPONSE_SUBMIT,
+	#s_rememberMe {
+		display: none;
+	}
+	
+	select {
+		@extend .wcs-select;
+	}
+	
+	span, p, li {
+		@extend .wcs-body-text;
+	}
+	
+	p {
+		margin: 0 0 15px;
+	}
+	
+	ul {
+		@extend .wcs-list;
+	}
+	
+	li {
+		@extend .wcs-list__item;
+	}
+	
+	.wcs-body-text--small {
+	    @extend .wcs-body-text--small;
+    }
+}
