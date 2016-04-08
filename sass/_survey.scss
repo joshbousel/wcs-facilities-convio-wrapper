@@ -34,8 +34,10 @@
 		margin: 5px 5px 5px 0;
 	}
 	
-	.ObjTitle {
+	.ObjTitle,
+	.wcs-header-text {
 		@extend .wcs-header-text;
+		margin: 0 0 10px;
 		text-align: center;
 	}
 	
